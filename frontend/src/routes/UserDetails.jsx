@@ -25,7 +25,7 @@ export const UserDetails = () => {
 
   useEffect(() => {
     fetch(
-      `http://localhost:8080/users?page=${page}&limit=${limit}&gender=${gender}`
+      `https://cointab-backend-fwj0.onrender.com/users?page=${page}&limit=${limit}&gender=${gender}`
     )
       .then((res) => res.json())
       .then((res) => setState({...res}));

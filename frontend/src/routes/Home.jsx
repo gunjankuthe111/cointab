@@ -10,7 +10,7 @@ export const Home = () => {
   const fetchData = async () => {
     try {
       setState({...state, loading: true});
-      let res = await fetch("http://localhost:8080/users", {
+      let res = await fetch("https://cointab-backend-fwj0.onrender.com/users", {
         method: "POST",
       });
       res = await res.json();
@@ -34,7 +34,7 @@ export const Home = () => {
   const deleteData = async () => {
     try {
       setState({...state, loading: true});
-      let res = await fetch("http://localhost:8080/users", {
+      let res = await fetch("https://cointab-backend-fwj0.onrender.com/users", {
         method: "DELETE",
       });
       res = await res.json();
